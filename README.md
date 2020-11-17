@@ -98,9 +98,9 @@ RAM
 Each variable in a struct take a certain amount of space
 Each data type also has rules about how they can exist in memory
 * It is **Vitally** important that data types must be addressed/allocated in memory
-Poor use of variab;es and data types can/will lead to ineffecient storage
+Poor use of variables and data types can/will lead to ineffecient storage
 
-Arrays work because we have pointers at beginning and when we want something else in the array, we do pointer math
+Arrays work because we have pointers at beginning and when we want something else in the array, we do pointer math  
 Must be correct data type, so we use the correct pointer math 
 
 ### Does this really matter?
@@ -132,18 +132,18 @@ Example:
 `in x;`
 However, these are not assigned in memory order
 
-`char *p;` - 4 bytes
-`char c;` - 1 byte
-`int x;` - 4 bytes
+`char *p;` - 4 bytes  
+`char c;` - 1 byte  
+`int x;` - 4 bytes  
 
 So there would be extra space (padding that is in between these variables)
 
 ### What happens if we change the order?
 
-char c; - 1
-char b; - 1
-char *p; - 4
-int x;
+char c; - 1  
+char b; - 1  
+char *p; - 4  
+int x;  
 
 So we would skip large amounts of memory
 
